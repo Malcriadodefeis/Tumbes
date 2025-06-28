@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: El Desarrollo Civilizatorio de Tumbes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F3F4F6;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 300px;
+            width: 100%;
+            max-width: 500px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-arrow {
+            font-size: 2.5rem;
+            line-height: 1;
+            color: #1F2937;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight">TUMBES</h1>
+            <p class="text-xl md:text-2xl font-bold" style="color: #00A9E0;">Cuna de Navegantes y Puerta de Imperios</p>
+            <p class="max-w-3xl mx-auto mt-4 text-gray-600">
+                Un recorrido visual por la profunda historia prehispánica de Tumbes, desde sus orígenes milenarios y su rol como potencia marítima, hasta su consolidación como un eje estratégico para los grandes imperios andinos.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="md:col-span-1 lg:col-span-1 bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center text-center">
+                <h2 class="text-xl font-bold text-gray-900 mb-2">Orígenes Ancestrales</h2>
+                <p class="text-6xl md:text-7xl font-black" style="color: #F15A29;">5to</p>
+                <p class="text-2xl font-bold text-gray-700">Milenio a.C.</p>
+                <p class="mt-4 text-sm text-gray-600">El registro prehistórico sitúa los primeros desarrollos culturales en Tumbes milenios antes de lo pensado, estableciendo a la región como un foco temprano de complejidad social en los Andes.</p>
+            </div>
+
+            <div class="md:col-span-1 lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-900 text-center mb-4">La Subsistencia de la Cultura Tumpis</h2>
+                <p class="text-center text-sm text-gray-600 mb-4">La economía Tumpis se adaptó magistralmente a su entorno, combinando los recursos del mar, los ríos y la tierra. La recolección del Spondylus (mullu) fue una actividad de inmenso valor ritual y económico.</p>
+                <div class="chart-container">
+                    <canvas id="subsistenceChart"></canvas>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-900 text-center mb-4">La Era de los Imperios: Una Sucesión de Poder</h2>
+                <p class="text-center text-sm text-gray-600 mb-6">Tumbes no fue un actor pasivo. Su valor estratégico y sus ricos recursos la convirtieron en un objetivo clave para las potencias expansionistas Chimú e Inca, quienes impusieron su dominio a través de la conquista.</p>
+                <div class="flex flex-col md:flex-row items-center justify-around space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="text-center p-4 rounded-lg" style="background-color: #00A9E020;">
+                        <h3 class="font-bold text-lg" style="color: #00A9E0;">Cultura Tumpis</h3>
+                        <p class="text-sm">~1200 a.C. - 100 d.C.</p>
+                        <p class="text-xs mt-1">Desarrollo autónomo y dominio marítimo.</p>
+                    </div>
+                    <div class="flow-arrow hidden md:block" style="color: #F7941D;">→</div>
+                     <div class="flow-arrow block md:hidden" style="color: #F7941D;">↓</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #F7941D20;">
+                        <h3 class="font-bold text-lg" style="color: #F7941D;">Dominio Chimú</h3>
+                        <p class="text-sm">~1300 - 1450 d.C.</p>
+                        <p class="text-xs mt-1">Conquista militar y control de recursos.</p>
+                    </div>
+                    <div class="flow-arrow hidden md:block" style="color: #F15A29;">→</div>
+                     <div class="flow-arrow block md:hidden" style="color: #F15A29;">↓</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #F15A2920;">
+                        <h3 class="font-bold text-lg" style="color: #F15A29;">Dominio Inca</h3>
+                        <p class="text-sm">~1450 - 1532 d.C.</p>
+                        <p class="text-xs mt-1">Consolidación como eje estratégico imperial.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-1 lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                 <h2 class="text-xl font-bold text-gray-900 text-center mb-4">Habilidades Tecnológicas Tumpis</h2>
+                 <p class="text-center text-sm text-gray-600 mb-4">Mucho antes de los imperios, los Tumpis demostraron una notable sofisticación técnica, destacando como los más grandes navegantes y hábiles metalurgistas de la costa peruana.</p>
+                <div class="chart-container h-[400px]">
+                    <canvas id="technologyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="md:col-span-1 lg:col-span-1 bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center">
+                 <h2 class="text-xl font-bold text-gray-900 text-center mb-4">Centro Monumental</h2>
+                 <p class="text-center text-sm text-gray-600 mb-6">El complejo <span class="font-bold">Cabeza de Vaca</span> fue el corazón administrativo y ceremonial de la región, con una escala que evidencia una sociedad compleja y organizada.</p>
+                 <div class="space-y-4">
+                     <div class="flex items-center space-x-4 p-3 rounded-lg" style="background-color: #8DC63F20;">
+                        <span class="text-4xl">🏛️</span>
+                        <div>
+                            <h3 class="font-bold">Huaca del Sol</h3>
+                            <p class="text-sm">Imponente pirámide de adobe, centro del poder religioso y político.</p>
+                        </div>
+                     </div>
+                     <div class="flex items-center space-x-4 p-3 rounded-lg" style="background-color: #662D9120;">
+                        <span class="text-4xl">🐚</span>
+                        <div>
+                            <h3 class="font-bold">Taller Malacológico</h3>
+                            <p class="text-sm">Centro especializado para trabajar el valioso Spondylus.</p>
+                        </div>
+                     </div>
+                     <div class="flex items-center space-x-4 p-3 rounded-lg" style="background-color: #00A9E020;">
+                        <span class="text-4xl">🛣️</span>
+                        <div>
+                            <h3 class="font-bold">Ingeniería Avanzada</h3>
+                            <p class="text-sm">Canales de irrigación y caminos empedrados conectaban el centro con el litoral.</p>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-900 text-center mb-4">Tumbes: Eje Estratégico del Tahuantinsuyo</h2>
+                 <p class="text-center text-sm text-gray-600 max-w-4xl mx-auto mb-6">Bajo el dominio Inca, Tumbes se transformó en un nodo logístico multimodal de vital importancia. Fue un centro de poder, un puerto naval y una pieza clave en la red de caminos del imperio.</p>
+                 <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+                     <div class="text-center">
+                        <p class="text-4xl mb-2">🏔️</p>
+                        <h3 class="font-bold">Qhapaq Ñan</h3>
+                        <p class="text-sm max-w-xs">Designada "cabeza de provincia", Tumbes era un punto clave en la red vial inca que conectaba el imperio.</p>
+                     </div>
+                     <div class="p-6 rounded-full flex flex-col items-center justify-center text-center border-4" style="border-color: #F15A29;">
+                        <span class="text-3xl"> TUMBES </span>
+                        <p class="font-bold text-sm">NODO MULTIMODAL</p>
+                     </div>
+                     <div class="text-center">
+                        <p class="text-4xl mb-2">⛵</p>
+                        <h3 class="font-bold">Puerto Principal</h3>
+                        <p class="text-sm max-w-xs">Una gran flota de balsas operaba desde Tumbes, facilitando el comercio y la comunicación marítima.</p>
+                     </div>
+                 </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row justify-around items-center text-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">Legado de Resistencia</h2>
+                    <p class="text-6xl md:text-7xl font-black" style="color: #662D91;">1532</p>
+                    <p class="text-lg font-bold text-gray-700">Combate de los Manglares</p>
+                    <p class="mt-2 text-sm text-gray-600 max-w-xs">El curaca Chilimasa lideró una férrea resistencia contra los conquistadores españoles, demostrando una identidad local fuerte y combativa.</p>
+                </div>
+                 <div class="w-px bg-gray-300 h-32 hidden md:block"></div>
+                 <hr class="w-3/4 md:hidden my-4">
+                 <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">Grito de Libertad</h2>
+                    <p class="text-6xl md:text-7xl font-black" style="color: #8DC63F;">1821</p>
+                    <p class="text-lg font-bold text-gray-700">Primera Ciudad Independiente</p>
+                    <p class="mt-2 text-sm text-gray-600 max-w-xs">El 7 de enero, Tumbes se convirtió en la primera ciudad en proclamar su independencia, un eco de su histórica resiliencia.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-12 text-xs text-gray-500">
+            <p>Desarrollo Civilizatorio en Tumbes: De los Orígenes a la Era Incaica - Estrella Davila</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const wrapLabel = (str, maxWidth) => {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length <= maxWidth) {
+                    currentLine += word + ' ';
+                } else {
+                    lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                }
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+        
+        const chartColors = {
+            blue: '#00A9E0',
+            orange: '#F7941D',
+            redOrange: '#F15A29',
+            green: '#8DC63F',
+            purple: '#662D91'
+        };
+
+        const defaultChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            family: 'Inter',
+                        },
+                        padding: 20
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    bodyFont: {
+                        family: 'Inter'
+                    },
+                    titleFont: {
+                        family: 'Inter'
+                    }
+                }
+            }
+        };
+
+        const subsistenceCtx = document.getElementById('subsistenceChart').getContext('2d');
+        new Chart(subsistenceCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Pesca y Recolección (Spondylus)', 'Agricultura Incipiente', 'Caza'],
+                datasets: [{
+                    label: 'Economía Tumpis',
+                    data: [55, 35, 10],
+                    backgroundColor: [chartColors.blue, chartColors.green, chartColors.orange],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 4,
+                    hoverOffset: 8
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                cutout: '60%',
+            }
+        });
+        
+        const technologyCtx = document.getElementById('technologyChart').getContext('2d');
+        const rawTechLabels = ['Grandes Navegantes de la Costa Peruana', 'Metalurgia Avanzada (Oro y Plata)', 'Cerámica Escultórica', 'Arquitectura y Planificación Urbana'];
+        new Chart(technologyCtx, {
+            type: 'bar',
+            data: {
+                labels: rawTechLabels.map(label => wrapLabel(label, 16)),
+                datasets: [{
+                    label: 'Nivel de Habilidad (Estimado)',
+                    data: [95, 85, 75, 80],
+                    backgroundColor: [chartColors.blue, chartColors.purple, chartColors.orange, chartColors.redOrange],
+                    borderRadius: 4,
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        ticks: {
+                           display: false
+                        }
+                    },
+                    y: {
+                        grid: {
+                            display: false,
+                             drawBorder: false
+                        },
+                        ticks: {
+                           font: {
+                               family: 'Inter',
+                               size: 12
+                           }
+                        }
+                    }
+                },
+                plugins: {
+                   ...defaultChartOptions.plugins,
+                   legend: {
+                       display: false
+                   }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
